@@ -26,6 +26,8 @@ Impact of Major Announcements:
 Investigated the impact of major announcements, including Prime Day, on Amazon's stock price.
 Analyzed the data to understand how such events influenced stock performance and market perception.
 
+![Amazon Volatility](https://github.com/cam-leo/AmazonStocks/blob/main/DifferenceHighLow.png)
+
 # Key Insights and Recommendations
 Factors Influencing Stock Price:
 
