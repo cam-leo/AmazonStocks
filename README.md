@@ -31,7 +31,8 @@ Factors Influencing Stock Price:
 
 Identified several key factors that significantly impact Amazon's stock price, including market trends, competitor actions, and major announcements.
 Analyzed historical data to correlate these factors with stock price fluctuations.
-Business Recommendations:
 
-Based on the analysis, provided strategic recommendations for future actions.
-Suggestions included timing of major announcements, strategies to outperform competitors, and approaches to leverage key metrics for better decision-making.
+## Business Recommendations:
+
+Based on the analysis, we should continue promoting Prime Day, especially in the NA region. Prime Day has a notable increase in all metrics for Amazon. Future actions can include increasing the budget spent on advertising Prime Day, or increasing the length.
+Other suggestions included timing of other major announcements, strategies to outperform competitors, and approaches to leverage key metrics for better decision-making.
