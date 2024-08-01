@@ -4,9 +4,14 @@ If you want to view the interactive dashboard, [click here](https://public.table
 
 In this project, I conducted an in-depth analysis of Amazon's stock data from 1997 to 2021 using Power BI, Tableau and Excel. The project involved several key steps and resulted in actionable insights regarding Amazon's stock performance.
 
+**For recommendations on future actions based on business insights, scroll to the bottom**
+
 ![Dashboard](https://github.com/cam-leo/AmazonStocks/blob/main/General%20Performance.png) 
 
 # Project Overview
+
+**Goal: To find certain North Star Metrics such as ROI, Moving Averages, Volatility of Stocks compared to baseline**
+
 Data Import and Cleaning:
 
 Imported a comprehensive dataset containing historical open and close prices of Amazon's stock from 1997 to 2021.
@@ -18,6 +23,9 @@ Visualizations included line charts, bar graphs, and other basic visuals to prov
 Competitor Analysis:
 
 Analyzed Amazon's performance against key competitors such as eBay and Walmart.
+
+![Comparison](https://github.com/cam-leo/AmazonStocks/blob/main/Comparison.png)
+
 Created comparative visualizations to highlight similarities and differences in stock price movements, providing a contextual understanding of Amazon's market position.
 Advanced Metrics and Insights:
 
