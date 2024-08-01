@@ -4,6 +4,8 @@ If you want to view the interactive dashboard, [click here](https://public.table
 
 In this project, I conducted an in-depth analysis of Amazon's stock data from 1997 to 2021 using Power BI, Tableau and Excel. The project involved several key steps and resulted in actionable insights regarding Amazon's stock performance.
 
+![Dashboard](https://github.com/cam-leo/AmazonStocks/blob/main/General%20Performance.png) 
+
 # Project Overview
 Data Import and Cleaning:
 
