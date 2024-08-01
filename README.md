@@ -26,7 +26,8 @@ Analyzed Amazon's performance against key competitors such as eBay and Walmart.
 
 ![Comparison](https://github.com/cam-leo/AmazonStocks/blob/main/Comparison.png)
 
-Created comparative visualizations to highlight similarities and differences in stock price movements, providing a contextual understanding of Amazon's market position.
+Note the similarities in spikes around 2020, which is when COVID began to take serious effect. All companies benefited from increased e-commerce, especially Amazon.
+
 Advanced Metrics and Insights:
 
 Employed stacked chart visuals and other advanced techniques to identify North Star metrics such as Return on Investment (ROI) and moving averages.
@@ -41,8 +42,7 @@ Analyzed the data to understand how such events influenced stock performance and
 # Key Insights and Recommendations
 Factors Influencing Stock Price:
 
-Identified several key factors that significantly impact Amazon's stock price, including market trends, competitor actions, and major announcements.
-Analyzed historical data to correlate these factors with stock price fluctuations.
+Identified several key factors that significantly impact Amazon's stock price, including COVID (~2020), Dot-com bubble (~2000) and the very first Prime Day (July 2015)
 
 ## Business Recommendations:
 
