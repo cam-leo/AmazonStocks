@@ -1,4 +1,4 @@
-# AmazonStocks
+# Amazon Stocks
 
 If you want to view the interactive dashboard, [click here](https://public.tableau.com/views/Amazon_17225340065340/GeneralPerformance?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) or [here](https://cam-leo.github.io/AmazonStocks/)
 
