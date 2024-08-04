@@ -50,3 +50,9 @@ Identified several key factors that significantly impact Amazon's stock price, i
 
 Based on the analysis, we should continue promoting Prime Day, especially in the NA region. Prime Day has a notable increase in all metrics for Amazon. Future actions can include increasing the budget spent on advertising Prime Day, or increasing the length.
 Other suggestions included timing of other major announcements, strategies to outperform competitors, and approaches to leverage key metrics for better decision-making.
+
+# Employee Information
+
+Interactive and comprehensive dashboard of Amazon employee dataset
+
+![details](https://github.com/cam-leo/AmazonStocks/blob/main/HR%20Details.png)
