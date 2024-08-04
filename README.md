@@ -8,6 +8,8 @@ In this project, I conducted an in-depth analysis of Amazon's stock data from 19
 
 ![Dashboard](https://github.com/cam-leo/AmazonStocks/blob/main/General%20Performance.png) 
 
+![Summary](https://github.com/cam-leo/AmazonStocks/blob/main/HR%20Summary.png)
+
 # Project Overview
 
 **Goal: To find certain North Star Metrics such as ROI, Moving Averages, Volatility of Stocks compared to baseline**
