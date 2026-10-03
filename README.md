@@ -1,60 +1,52 @@
 # Amazon Stocks
 
-If you want to view the interactive dashboard for the charts, [click here](https://public.tableau.com/views/Amazon_17225340065340/GeneralPerformance?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) or [here](https://cam-leo.github.io/AmazonStocks/)
+Interactive dashboards: [Tableau Public](https://public.tableau.com/views/Amazon_17225340065340/GeneralPerformance?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) · [project page](https://cam-leo.github.io/AmazonStocks/)
 
-In this project, I conducted an in-depth analysis of Amazon's stock data from 1997 to 2021 using Power BI, Tableau and Excel. The project involved several key steps and resulted in actionable insights regarding Amazon's stock performance.
+An analysis of Amazon's daily stock data from 1997 to 2021, compared with Walmart and eBay, using Excel, Power BI and Tableau. A second dashboard explores a practice HR dataset.
 
-**For recommendations on future actions based on business insights, scroll to the bottom**
+![General performance dashboard](General%20Performance.png)
 
-![Dashboard](https://github.com/cam-leo/AmazonStocks/blob/main/General%20Performance.png) 
+## Project Overview
 
-![Summary](https://github.com/cam-leo/AmazonStocks/blob/main/HR%20Summary.png)
+**Goal:** track Amazon's stock performance over time (return, trend and volatility) and compare it with competitors.
 
-If you want to view the Amazon HR employee dashboard, [click here](https://public.tableau.com/views/AmazonHRDashboard/HRSummary?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+1. **Data import and cleaning (Excel):** daily open, high, low, close and adjusted close prices and volume, 1997-2021. 1997 is a partial year, since Amazon listed in May 1997.
+2. **Visualisation (Power BI, Tableau):** price trends over time and a comparison with eBay and Walmart.
+3. **Volatility:** the daily high-low range, shown below.
 
-# Project Overview
+![Comparison](Comparison.png)
 
-**Goal: To find certain North Star Metrics such as ROI, Moving Averages, Volatility of Stocks compared to baseline**
+## How to Read These Charts
 
-Data Import and Cleaning:
+**The volatility charts measure dollar ranges, not risk.** The "volatility" series is the daily high minus low price, in dollars, summed over each month (Amazon) or quarter (Walmart and eBay). This has three problems:
 
-Imported a comprehensive dataset containing historical open and close prices of Amazon's stock from 1997 to 2021.
-Utilized Excel to clean the dataset, removing any inconsistencies and ensuring data integrity for accurate analysis.
-Visualization Creation:
+- **It grows with the share price.** Amazon traded at a few dollars a share in the late 1990s (split-adjusted) and over $3,000 in 2020. A 2% daily move is about $0.10 at the first price and $60 at the second. Most of the rise in the Amazon chart is the price going up, not the stock getting riskier.
+- **The periods differ.** Amazon is summed by month, Walmart and eBay by quarter, so their totals aren't on the same scale. Sums also depend on how many trading days fall in each period.
+- **The companies trade at different prices,** so dollar ranges can't be compared across them.
 
-Developed a series of visualizations in Power BI to uncover trends and patterns in Amazon's stock price changes over the years.
-Visualizations included line charts, bar graphs, and other basic visuals to provide a clear view of the stock's performance trajectory.
-Competitor Analysis:
+A comparable measure divides by price, for example the daily range as a percentage of the close, `(High − Low) / Close`, or the standard deviation of daily returns, then averages over each period. With that measure, the dot-com period around 2000 and March 2020 stand out as Amazon's most volatile times.
 
-Analyzed Amazon's performance against key competitors such as eBay and Walmart.
+**Volatility isn't a sign of benefiting.** All three companies show a spike around 2020. That reflects large price swings during the COVID-19 crash and rebound, which is volatility, not gains. Whether a company benefited shows up in its return over the period, such as the change in adjusted close, not in how much its price swung.
 
-![Comparison](https://github.com/cam-leo/AmazonStocks/blob/main/Comparison.png)
+**The yearly table shows sums of daily prices.** For example, "1997: 500" is the sum of about 160 daily closing prices, so it grows with the number of trading days as well as with the price. A yearly average or the year-end close would be meaningful.
 
-Note the similarities in spikes around 2020, which is when COVID began to take serious effect. All companies benefited from increased e-commerce, especially Amazon.
+**The revenue chart isn't from Amazon's reports.** Amazon reports revenue by North America, International and AWS, not APAC / EMEA / NA. Its actual revenue was $386 billion in 2020, while the chart peaks around 1,200K. Treat this chart as coming from a sample dataset until it's replaced with figures from Amazon's annual reports (10-K).
 
-Advanced Metrics and Insights:
+![Amazon daily high-low range](DifferenceHighLow.png)
 
-Employed stacked chart visuals and other advanced techniques to identify North Star metrics such as Return on Investment (ROI) and moving averages.
-These metrics were crucial in answering critical business questions, such as the key factors influencing Amazon's stock price movements.
-Impact of Major Announcements:
+## Key Observations
 
-Investigated the impact of major announcements, including Prime Day, on Amazon's stock price.
-Analyzed the data to understand how such events influenced stock performance and market perception.
+- Amazon's price history has three clear episodes: the dot-com bubble and crash (around 1999-2001), steady growth through the 2010s, and the COVID-19 swing in 2020.
+- The first Prime Day was in July 2015.
 
-![Amazon Volatility](https://github.com/cam-leo/AmazonStocks/blob/main/DifferenceHighLow.png)
+**About Prime Day:** an earlier version of this README said Prime Day "has a notable increase in all metrics" and recommended spending more on Prime Day advertising. None of the charts isolate Prime Day. Monthly sums of daily ranges can't show the effect of a single event, and a share price measures what investors expect, not Prime Day sales. Testing the claim would take an event study: compare Amazon's return in the days around each Prime Day with the market's return (e.g. the S&P 500) over the same days. A recommendation about advertising budgets would need sales data, which this dataset doesn't have.
 
-# Key Insights and Recommendations
-Factors Influencing Stock Price:
+## HR Dashboard
 
-Identified several key factors that significantly impact Amazon's stock price, including COVID (~2020), Dot-com bubble (~2000) and the very first Prime Day (July 2015)
+![HR summary](HR%20Summary.png)
 
-## Business Recommendations:
+[Interactive version](https://public.tableau.com/views/AmazonHRDashboard/HRSummary?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-Based on the analysis, we should continue promoting Prime Day, especially in the NA region. Prime Day has a notable increase in all metrics for Amazon. Future actions can include increasing the budget spent on advertising Prime Day, or increasing the length.
-Other suggestions included timing of other major announcements, strategies to outperform competitors, and approaches to leverage key metrics for better decision-making.
+This dashboard uses a **fictional practice HR dataset**, not Amazon employee data. The names, salaries and locations are randomly generated: for example, names and gender icons often don't match. It shows dashboard design (KPIs, filters, drill-down to employee details), not facts about Amazon. The Amazon logo on the dashboard should be removed so it isn't read as real company data.
 
-# Employee Information
-
-Interactive and comprehensive dashboard of Amazon employee dataset
-
-![details](https://github.com/cam-leo/AmazonStocks/blob/main/HR%20Details.png)
+![HR details](HR%20Details.png)
